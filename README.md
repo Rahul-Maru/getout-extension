@@ -1,0 +1,2 @@
+# getout-extension
+get out
