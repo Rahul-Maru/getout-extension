@@ -3,15 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Get Out</title>
 	<script src="return.js"></script>
 </head>
 <body onload="goback()">
-	<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh;">
-		<h1>Get Out</h1>
-		<p id="timer">20s</p>
-		<form id="return" action="https://google.com">
-			<button>Go Back</button>
+	<div class="container">
+		<h1>GET OUT</h1>
+		<p id="timer">5s</p>
+		<form id="return">
+			<label style="display: block; margin-bottom: 8px;">
+				<input type="checkbox" id="confirm" name="confirm" required>
+				I need to be here*
+			</label>
+			<button type="button">Go Forth at Thy Own Risk</button>
 		</form>
 		<p id="test">test</p>
 	</div>
