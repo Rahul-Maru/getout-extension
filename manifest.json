@@ -7,7 +7,7 @@
 		"16": "imgs/blast-16.png",
 		"32": "imgs/blast-32.png",
 		"48": "imgs/blast-48.png",
-		"128": "img/blast-128.png"
+		"128": "imgs/blast-128.png"
 	},
 	"action": {
 		"default_popup": "popup.html"
