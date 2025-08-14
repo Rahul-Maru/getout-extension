@@ -10,12 +10,14 @@
 		"128": "imgs/miau-128.png"
 	},
 	"action": {
-		"default_popup": "hello.html"
+		"default_popup": "popup.html"
 	},
 	"content_scripts": [
 		{
 			"matches": [
 				"https://xyproblem.info/*",
+				"https://www.xyproblem.info/*",
+				"https://www.reddit.com/*",
 				"https://reddit.com/*"
 			],
 			"js": [

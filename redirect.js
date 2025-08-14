@@ -1,13 +1,24 @@
-// const fs = require('fs');
+const sleep = s => new Promise(r => setTimeout(r, 1000*s));
+const PTH = "https://rahul-maru.github.io/getout-extension"
 
-// var loc = fs.realpathSync("./")
-// var dir = loc.substring(0, loc.lastIndexOf('/'));
+async function redirect() {
+	console.log("=== REDIRECT SCRIPT RUNNING ===")
+	loc = location.href
+	console.log("Current URL:", loc)
+	path = PTH + "?src=" + loc
+	console.log("Redirecting to:", path)
+	console.log("Script loaded at:", new Date().toISOString())
 
-const PTH = "https://rahul-maru.github.io/getout-extension/"
+	await sleep(3)
 
-function redirect() {
-	console.log("Redirecting to:", PTH)
-	location.replace(PTH)
+	try {
+		location.replace(path)
+		console.log("Redirect command executed")
+	} catch (error) {
+		console.error("Redirect failed:", error)
+	}
 }
 
+console.log("redirect.js loaded on:", location.href)
 redirect()
+
