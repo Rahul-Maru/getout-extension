@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Out</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Out</title>
+	<script src="return.js"></script>
 </head>
-<body>
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh;">
-        <h1>Get Out</h1>
-        <p class="timer">20s</p>
-    </div>
+<body onload="goback()">
+	<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh;">
+		<h1>Get Out</h1>
+		<p id="timer">20s</p>
+		<form id="return" action="https://google.com">
+			<button>Go Back</button>
+		</form>
+		<p id="test">test</p>
+	</div>
 </body>
 </html>
