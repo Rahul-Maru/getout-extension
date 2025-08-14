@@ -7,17 +7,18 @@
 	<title>Get Out</title>
 	<script src="return.js"></script>
 </head>
-<body onload="goback()">
+<body onload="loadtimer()">
 	<div class="container">
 		<h1>GET OUT</h1>
 		<p id="timer">5s</p>
 		<form id="return">
 			<label style="display: block; margin-bottom: 8px;">
 				<input type="checkbox" id="confirm" name="confirm" required>
-				I need to be here*
+				I really need to be here<i style="font-size: small; color:crimson;">*</i>
 			</label>
-			<button type="button">Go Forth at Thy Own Risk</button>
+			<button type="button">Nuh-uh</button>
 		</form>
+		<button onclick="window.open('','_self').close();">Back to Safety</button>
 		<p id="test">test</p>
 	</div>
 </body>
