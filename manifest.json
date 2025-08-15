@@ -25,5 +25,19 @@
 			],
 			"run_at": "document_start"
 		}
+	],
+	"background": {
+		"service_worker": "sw.js"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"index.html",
+				"return.js"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
 	]
 }

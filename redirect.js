@@ -1,5 +1,5 @@
 const sleep = s => new Promise(r => setTimeout(r, 1000*s));
-const PTH = "https://rahul-maru.github.io/getout-extension"
+const PTH = chrome.runtime.getURL("index.html")
 
 async function redirect() {
 	console.log("=== REDIRECT SCRIPT RUNNING ===")
@@ -9,7 +9,7 @@ async function redirect() {
 	console.log("Redirecting to:", path)
 	console.log("Script loaded at:", new Date().toISOString())
 
-	await sleep(3)
+	await sleep(2)
 
 	try {
 		location.replace(path)
